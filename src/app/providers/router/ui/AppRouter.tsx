@@ -1,10 +1,13 @@
 import { Suspense } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Route, Routes } from 'react-router-dom';
 import { routeConfig } from 'shared/config/routerConfig/routerConfig';
 
 const AppRouter = () => {
+    const {t} = useTranslation();
+
     return (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div>{t('Loading')}</div>}>
             <div className='page-wrapper'>
             <Routes>
                 {Object.values(routeConfig).map(({element, path}) => (
