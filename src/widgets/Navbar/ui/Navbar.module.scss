@@ -8,7 +8,8 @@
 }
 
 .links {
-    margin-left: auto;
+    display: flex;
+    justify-content: end;
 }
 
 .mainLink {
