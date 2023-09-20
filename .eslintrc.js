@@ -3,7 +3,11 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ["standard-with-typescript", "plugin:react/recommended"],
+  extends: [
+    "standard-with-typescript", 
+    "plugin:react/recommended",
+    "plugin:i18next/recommended"
+  ],
   overrides: [
     {
       env: {
@@ -20,7 +24,11 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react"],
+  plugins: [
+    "react", 
+    "@typescript-eslint", 
+    "i18next"
+  ],
   rules: {
     "react/jsx-indent": [2, 4],
     "react/jsx-indent-props": [2, 4],
@@ -55,5 +63,5 @@ module.exports = {
         trailingUnderscore: "allow",
       },
     ],
-  },
+    "i18next/no-literal-string": ['error', { markupOnly: true, ignoreAttribute: ['stroke'] }],  },
 };
