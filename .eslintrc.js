@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    jest: true
   },
   extends: [
     "standard-with-typescript", 
@@ -19,7 +20,7 @@ module.exports = {
       },
     },
   ],
-  ignorePatterns: [".eslintrc.js", "webpack.config.ts"],
+  ignorePatterns: [".eslintrc.js", "webpack.config.ts", "jest.config.ts"],
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
