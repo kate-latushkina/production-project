@@ -19,8 +19,19 @@ module.exports = {
         sourceType: "script",
       },
     },
+    {
+      files: ['**/src/**/*.test.{ts,tsx}'],
+      rules: {
+          'i18next/no-literal-string': 'off',
+        },
+    },
   ],
-  ignorePatterns: [".eslintrc.js", "webpack.config.ts", "jest.config.ts"],
+  ignorePatterns: [
+    ".eslintrc.js", 
+    "webpack.config.ts", 
+    "jest.config.ts",
+    "jestEmptyComponent.tsx"
+  ],
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
@@ -64,5 +75,5 @@ module.exports = {
         trailingUnderscore: "allow",
       },
     ],
-    "i18next/no-literal-string": ['error', { markupOnly: true, ignoreAttribute: ['stroke'] }],  },
+    "i18next/no-literal-string": ['error', { markupOnly: true, ignoreAttribute: ['data-testid', 'to'] }],  },
 };

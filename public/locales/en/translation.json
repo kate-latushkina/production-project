@@ -1,7 +1,8 @@
 {
-    "Test": "Testing",
-    "Translate": "Translate",
-    "About": "About",
-    "Main": "Main",
-    "Not found": "Not found"
+  "Test": "Testing",
+  "Translate": "Translate",
+  "About": "About",
+  "Main": "Main",
+  "Not found": "Not found",
+  "Toggle": "Toggle"
 }
