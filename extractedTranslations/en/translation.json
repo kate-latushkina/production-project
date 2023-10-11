@@ -1,8 +1,9 @@
 {
-  "Test": "Testing",
-  "Translate": "English",
   "About": "About",
+  "EN/RU": "EN",
+  "Login": "Login",
   "Main": "Main",
   "Not found": "Not found",
-  "EN/RU": "EN"
+  "Test": "Testing",
+  "Translate": "English"
 }

@@ -33,7 +33,8 @@ module.exports = {
   plugins: [
     "react", 
     "@typescript-eslint", 
-    "i18next"
+    "i18next",
+    "react-hooks"
   ],
   rules: {
     "react/jsx-indent": [2, 4],
@@ -69,5 +70,10 @@ module.exports = {
         trailingUnderscore: "allow",
       },
     ],
-    "i18next/no-literal-string": ["error", { markupOnly: true, ignoreAttribute: ["data-testid", "to"] }],  },
+    "i18next/no-literal-string": ["error", { 
+      markupOnly: true, ignoreAttribute: ["data-testid", "to"] 
+    }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error"
+  },
 };
