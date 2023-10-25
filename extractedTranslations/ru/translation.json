@@ -1,9 +1,12 @@
 {
   "About": "О сайте",
+  "Decrement": "Decrement",
   "EN/RU": "RU",
+  "Increment": "Increment",
   "Login": "Login",
   "Main": "Главная",
   "Not found": "Страница не найдена",
   "Test": "Тестовый перевод",
-  "Translate": "Русский"
+  "Translate": "Русский",
+  "Value": "Value"
 }

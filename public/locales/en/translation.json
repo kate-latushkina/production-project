@@ -4,5 +4,8 @@
   "Main": "Main",
   "Not found": "Not found",
   "EN/RU": "EN",
-  "Login": "Login"
+  "Login": "Login",
+  "Value": "Value",
+  "Increment": "Increment",
+  "Decrement": "Decrement"
 }

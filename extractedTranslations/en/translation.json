@@ -1,9 +1,12 @@
 {
   "About": "About",
+  "Decrement": "Decrement",
   "EN/RU": "EN",
+  "Increment": "Increment",
   "Login": "Login",
   "Main": "Main",
   "Not found": "Not found",
   "Test": "Testing",
-  "Translate": "English"
+  "Translate": "English",
+  "Value": "Value"
 }
