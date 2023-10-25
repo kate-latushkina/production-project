@@ -8,7 +8,6 @@
     visibility: hidden;
     transition: all .5s ease;
     z-index: -1;
-    color: #383b4c;
 }
 
 .overlay {
@@ -25,7 +24,7 @@
     border-radius: 12px;
     transition: 0.3s transform;
     transform: scale(0.5);
-    background: #a1b5ba;
+    background: var(--bg-color);
     max-width: 60%;
 }
 
