@@ -7,7 +7,7 @@ export function createReduxStore (initialState?: StateSchema): EnhancedStore {
     reducer: {
       counter: counterReducer
     },
-    devTools: IS_DEV,
+    devTools: __IS_DEV__,
     preloadedState: initialState
   });
 }

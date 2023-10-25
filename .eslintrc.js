@@ -17,6 +17,9 @@ module.exports = {
         },
     },
   ],
+  globals: {
+    __IS_DEV__: true,
+  },
   ignorePatterns: [
     ".eslintrc.js", 
     "webpack.config.ts", 
@@ -66,8 +69,8 @@ module.exports = {
           "snake_case",
           "UPPER_CASE",
         ],
-        leadingUnderscore: "allow",
-        trailingUnderscore: "allow",
+        leadingUnderscore: "allowDouble",
+        trailingUnderscore: "allowDouble",
       },
     ],
     "i18next/no-literal-string": ["error", { 
