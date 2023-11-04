@@ -6,7 +6,12 @@
   "Login": "Login",
   "Main": "Main",
   "Not found": "Not found",
+  "Password": "Password",
   "Test": "Testing",
   "Translate": "English",
-  "Value": "Value"
+  "Username": "Username",
+  "Value": "Value",
+  "Введите username": "Введите username",
+  "Введите пароль": "Введите пароль",
+  "Войти": "Войти"
 }
