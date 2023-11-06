@@ -10,8 +10,10 @@ interface LangSwitcherProps {
 
 export const LangSwitcher = ({ className = "", short = false }: LangSwitcherProps): JSX.Element => {
   const { t, i18n } = useTranslation();
+  const enLang = "en";
+  const ruLang = "ru";
   const onToggleLang = (): void => {
-    void i18n.changeLanguage(i18n.language === "en" ? "ru" : "en");
+    void i18n.changeLanguage(i18n.language === enLang ? ruLang : enLang);
   };
 
   return (
@@ -20,7 +22,7 @@ export const LangSwitcher = ({ className = "", short = false }: LangSwitcherProp
           theme={ButtonTheme.CLEAR}
           className={classNames(cls.LangSwitcher, {}, [className])}
         >
-          {t(short ? "EN/RU" : "Translate")}
+          {short ? t("EN/RU") : t("Translate")}
       </Button>
   );
 };
