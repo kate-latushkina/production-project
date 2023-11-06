@@ -1,0 +1,17 @@
+.InputWrapper {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.placeholder {
+    margin-right: 5px;
+}
+
+.input {
+    border: 1px solid var(--primary-color);
+    text-shadow: 0 0 0 var(--primary-color);
+
+    &:focus {
+        outline: none;
+    }
+}

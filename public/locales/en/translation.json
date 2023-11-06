@@ -1,11 +1,14 @@
 {
-  "Translate": "English",
   "About": "About",
+  "Decrement": "Decrement",
+  "EN/RU": "EN",
+  "Increment": "Increment",
+  "Login": "Login",
   "Main": "Main",
   "Not found": "Not found",
-  "EN/RU": "EN",
-  "Login": "Login",
+  "Test": "Testing",
+  "Translate": "English",
   "Value": "Value",
-  "Increment": "Increment",
-  "Decrement": "Decrement"
+  "Username": "Username",
+  "Password": "Password"
 }

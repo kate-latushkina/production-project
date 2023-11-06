@@ -77,6 +77,8 @@ module.exports = {
       markupOnly: true, ignoreAttribute: ["data-testid", "to"] 
     }],
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "error"
+    "react-hooks/exhaustive-deps": "error",
+    "react/display-name": "off",
+    "@typescript-eslint/explicit-function-return-type": "off"
   },
 };
