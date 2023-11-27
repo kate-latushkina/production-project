@@ -10,5 +10,8 @@
   "Translate": "English",
   "Value": "Value",
   "Username": "Username",
-  "Password": "Password"
+  "Password": "Password",
+  "Login_error": "Incorrect username or password",
+  "Auth form": "Authorization form",
+  "Logout": "Logout"
 }

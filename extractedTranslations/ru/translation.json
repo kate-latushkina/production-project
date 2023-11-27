@@ -1,9 +1,12 @@
 {
   "About": "О сайте",
+  "Auth form": "Auth form",
   "Decrement": "Decrement",
   "EN/RU": "RU",
   "Increment": "Increment",
   "Login": "Войти",
+  "Login_error": "Login_error",
+  "Logout": "Logout",
   "Main": "Главная",
   "Not found": "Страница не найдена",
   "Password": "Пароль",

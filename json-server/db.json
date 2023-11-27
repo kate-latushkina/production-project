@@ -7,5 +7,17 @@
     "comments": [
       { "id": 1, "body": "some comment", "postId": 1 }
     ],
-    "profile": { "name": "typicode" }
+    "profile": { "name": "typicode" },
+    "users": [
+      {
+        "id": 1,
+        "username": "katekate",
+        "password": "123"
+      },
+      {
+        "id": 2,
+        "username": "123",
+        "password": "qqq"
+      }
+    ]
 }

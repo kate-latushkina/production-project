@@ -1,9 +1,12 @@
 {
   "About": "About",
+  "Auth form": "Auth form",
   "Decrement": "Decrement",
   "EN/RU": "EN",
   "Increment": "Increment",
   "Login": "Login",
+  "Login_error": "Login_error",
+  "Logout": "Logout",
   "Main": "Main",
   "Not found": "Not found",
   "Password": "Password",
