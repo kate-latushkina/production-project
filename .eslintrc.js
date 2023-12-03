@@ -80,6 +80,7 @@ module.exports = {
     "react-hooks/exhaustive-deps": "error",
     "react/display-name": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/strict-boolean-expressions": "off"
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/no-dynamic-delete": "off"
   },
 };
