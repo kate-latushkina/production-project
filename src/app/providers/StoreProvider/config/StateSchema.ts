@@ -9,7 +9,6 @@ import { type CombinedState } from "redux";
 export interface StateSchema {
   counter: CounterSchema
   user: UserSchema
-
   loginForm?: LoginSchema
 }
 
