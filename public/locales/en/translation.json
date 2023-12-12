@@ -13,5 +13,6 @@
   "Password": "Password",
   "Login_error": "Incorrect username or password",
   "Auth form": "Authorization form",
-  "Logout": "Logout"
+  "Logout": "Logout",
+  "Profile": "Profile"
 }

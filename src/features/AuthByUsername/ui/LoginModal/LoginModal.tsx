@@ -19,7 +19,7 @@ export const LoginModal = ({ className = "", isOpen, onClose }: LoginModalProps)
           onClose={onClose}
       >
           <Suspense fallback={<Loader />}>
-              <LoginFormLazy></LoginFormLazy>
+              <LoginFormLazy onSuccess={onClose}></LoginFormLazy>
           </Suspense>
       </Modal>
   );

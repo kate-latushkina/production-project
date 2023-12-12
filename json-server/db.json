@@ -7,7 +7,15 @@
     "comments": [
       { "id": "1", "body": "some comment", "postId": 1 }
     ],
-    "profile": { "name": "typicode" },
+    "profile": { 
+      "name": "kate",
+      "username": "katekate",
+      "age": 30,
+      "country": "UK",
+      "currency": "EUR",
+      "city": "London",
+      "avatar": "https://www.pngwing.com/en/search?q=user+Avatar" 
+    },
     "users": [
       {
         "id": "1",
