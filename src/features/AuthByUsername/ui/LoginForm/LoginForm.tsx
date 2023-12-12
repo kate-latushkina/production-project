@@ -3,25 +3,27 @@ import cls from "./LoginForm.module.scss";
 import { useTranslation } from "react-i18next";
 import { Button, ButtonTheme } from "shared/ui/Button/Button";
 import { Input } from "shared/ui/Input/Input";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { memo, useCallback } from "react";
 import { loginActions, loginReducer } from "features/AuthByUsername/model/slice/loginSlice";
 import { getLoginState } from "features/AuthByUsername/model/selectors/getLoginState/getLoginState";
 import { loginByUsername } from "features/AuthByUsername/model/services/loginByUsername/loginByUsername";
 import { Text, TextTheme } from "shared/ui/Text/Text";
 import { DynamicModuleLoader, type ReducersList } from "shared/lib/components/DynamicModalLoader/DynamicModalLoader";
+import { useAppDispatch } from "shared/lib/hooks/useAppDispatch/useAppDispatch";
 
 export interface LoginFormProps {
   className?: string
+  onSuccess: () => void
 }
 
 const initialReducers: ReducersList = {
   loginForm: loginReducer
 };
 
-const LoginForm = memo(({ className = "" }: LoginFormProps) => {
+const LoginForm = memo(({ className = "", onSuccess }: LoginFormProps) => {
   const { t } = useTranslation();
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const { username, password, isLoading, error } = useSelector(getLoginState);
 
   const onChangeUsername = useCallback((value: string) => {
@@ -32,9 +34,12 @@ const LoginForm = memo(({ className = "" }: LoginFormProps) => {
     dispatch(loginActions.setPassword(value));
   }, [dispatch]);
 
-  const onLoginClick = useCallback(() => {
-    dispatch(loginByUsername({ username, password }));
-  }, [dispatch, password, username]);
+  const onLoginClick = useCallback(async () => {
+    const result = await dispatch(loginByUsername({ username, password }));
+    if (result.meta.requestStatus === "fulfilled") {
+      onSuccess();
+    }
+  }, [onSuccess, dispatch, password, username]);
 
   return (
       <DynamicModuleLoader reducers={initialReducers} removeAfterUnmount={true}>
@@ -58,6 +63,7 @@ const LoginForm = memo(({ className = "" }: LoginFormProps) => {
               <Button
                   theme={ButtonTheme.OUTLINE}
                   className={cls.loginBtn}
+                  // eslint-disable-next-line @typescript-eslint/no-misused-promises
                   onClick={onLoginClick}
                   disabled={isLoading}
             >
