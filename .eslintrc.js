@@ -82,6 +82,7 @@ module.exports = {
     "react/display-name": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
-    "@typescript-eslint/no-dynamic-delete": "off"
+    "@typescript-eslint/no-dynamic-delete": "off",
+    "@typescript-eslint/ban-ts-comment": "warn"
   },
 };
