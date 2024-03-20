@@ -1,4 +1,4 @@
-import { type ReduxStoreWithManager, type StateSchema } from "./config/StateSchema";
+import { type ThunkConfig, type ReduxStoreWithManager, type StateSchema } from "./config/StateSchema";
 import { createReduxStore, type AppDispatch } from "./config/store";
 import { StoreProvider } from "./ui/StoreProvider";
 
@@ -7,5 +7,6 @@ export {
   createReduxStore,
   type StateSchema,
   type ReduxStoreWithManager,
-  type AppDispatch
+  type AppDispatch,
+  type ThunkConfig
 };
