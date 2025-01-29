@@ -14,5 +14,8 @@
   "Login_error": "Incorrect username or password",
   "Auth form": "Authorization form",
   "Logout": "Logout",
-  "Profile": "Profile"
+  "Profile": "Profile",
+  "Edit": "Edit",
+  "Your name": "Your name",
+  "Your lastname": "Your lastname"
 }

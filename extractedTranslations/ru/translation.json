@@ -3,6 +3,7 @@
   "Auth form": "Auth form",
   "Decrement": "Decrement",
   "EN/RU": "RU",
+  "Edit": "Edit",
   "Increment": "Increment",
   "Login": "Войти",
   "Login_error": "Login_error",
@@ -15,6 +16,8 @@
   "Translate": "Русский",
   "Username": "Имя пользователя",
   "Value": "Value",
+  "Your lastname": "Your lastname",
+  "Your name": "Your name",
   "Введите username": "Введите username",
   "Введите пароль": "Введите пароль",
   "Войти": "Войти"
